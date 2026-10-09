@@ -4,7 +4,7 @@
 **Southern Alberta Institute of Technology · Calgary, Alberta**  
 **Kyle Fischer · Raspberry Pi security configuration**
 
-Secure Home Hub was a Raspberry Pi prototype developed by a team of six for connecting and monitoring smart-home devices through a local hub. The project combined physical hardware, networking, security tools, and a user interface. My responsibility was security configuration on the Raspberry Pi.
+Secure Home Hub was a Raspberry Pi prototype developed by our team for connecting and monitoring smart-home devices through a local hub. The project combined physical hardware, networking, security tools, and a user interface. My responsibility was security configuration on the Raspberry Pi.
 
 ![Secure Home Hub and the IoT demonstration hardware](assets/home-hub-iot-setup.png)
 
