@@ -4,13 +4,13 @@
 **Southern Alberta Institute of Technology · Calgary, Alberta**  
 **Kyle Fischer · Raspberry Pi security configuration**
 
-I worked with a team of six to develop Secure Home Hub, a Raspberry Pi prototype for connecting and monitoring smart-home devices through a local hub. We combined physical hardware, networking, security tools, and a user interface. My responsibility was security configuration on the Raspberry Pi.
+Worked with a team of six to develop Secure Home Hub, a Raspberry Pi prototype for connecting and monitoring smart-home devices through a local hub. We combined physical hardware, networking, security tools, and a user interface. My responsibility was security configuration on the Raspberry Pi.
 
 ![Secure Home Hub and the IoT demonstration hardware](assets/home-hub-iot-setup.png)
 
 ## My contribution
 
-I worked on Linux firewall configuration, rule inspection, and troubleshooting for the Raspberry Pi. I initially worked directly with iptables and also used UFW during the project after encountering difficulties with the initial setup. My notes document firewall policies, device-access rules, logging options, and integration discussions with teammates.
+Worked on Linux firewall configuration, rule inspection, and troubleshooting for the Raspberry Pi. Started with iptables and also used UFW after encountering difficulties with the initial setup. My notes document firewall policies, device-access rules, logging options, and integration discussions with teammates.
 
 ## Project scope
 
