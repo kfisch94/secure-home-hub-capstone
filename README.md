@@ -4,7 +4,7 @@
 **Southern Alberta Institute of Technology · Calgary, Alberta**  
 **Kyle Fischer · Raspberry Pi security configuration**
 
-Secure Home Hub was a Raspberry Pi prototype developed by our team for connecting and monitoring smart-home devices through a local hub. The project combined physical hardware, networking, security tools, and a user interface. My responsibility was security configuration on the Raspberry Pi.
+I worked with a team of six to develop Secure Home Hub, a Raspberry Pi prototype for connecting and monitoring smart-home devices through a local hub. We combined physical hardware, networking, security tools, and a user interface. My responsibility was security configuration on the Raspberry Pi.
 
 ![Secure Home Hub and the IoT demonstration hardware](assets/home-hub-iot-setup.png)
 
@@ -22,9 +22,9 @@ I worked on Linux firewall configuration, rule inspection, and troubleshooting f
 | Monitoring | Network visibility and security tooling | Firewall logging research and troubleshooting |
 | Delivery | Sprint planning and final showcase | Security notes and demonstration preparation |
 
-The team used a Raspberry Pi 4 with Ubuntu 22.04 LTS, touchscreen and USB support, an Ubuntu/NetworkManager Wi-Fi hotspot, and SSH, RDP, and GitHub for remote development. The final showcase describes Snort and Scapy as part of the network functionality. These technologies describe the team project; their complete installation and functional tests are not included in the selected security evidence.
+We used a Raspberry Pi 4 with Ubuntu 22.04 LTS, touchscreen and USB support, an Ubuntu/NetworkManager Wi-Fi hotspot, and SSH, RDP, and GitHub for remote development. Our final showcase describes Snort and Scapy as part of the network functionality. These technologies describe our team project; their complete installation and functional tests are not included in the selected security evidence.
 
-Hardware integration, the complete GUI, network functions, and the setup wizard were team contributions. Their inclusion here does not imply that I authored every component.
+We contributed to hardware integration, the complete GUI, network functions, and the setup wizard as a team. My individual focus was Raspberry Pi security, rather than authorship of every component.
 
 ## Prototype architecture
 
