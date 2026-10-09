@@ -1,6 +1,6 @@
 # Secure Home Hub evidence review
 
-Reviewed October 9, 2026. Project dates and security responsibility were confirmed by Kyle Fischer: SAIT capstone, April–December 2023; responsibility for security on the Raspberry Pi, with direct iptables work and later use of UFW. Kyle also supplied a resume description identifying a six-person team, Raspberry Pi 4, Ubuntu 22.04 LTS, touchscreen and USB support, hotspot automation, and SSH/RDP/GitHub workflows. Platform and team context were incorporated without attributing every team component to Kyle personally.
+Evidence reviewed October 9, 2026. My SAIT capstone ran from April–December 2023. I was responsible for security on the Raspberry Pi, working directly with iptables and later using UFW. I worked with a six-person team using a Raspberry Pi 4, Ubuntu 22.04 LTS, touchscreen and USB support, hotspot automation, and SSH/RDP/GitHub workflows. These platform details describe our team project; my individual responsibility was Raspberry Pi security.
 
 ## Publication recommendation
 
@@ -29,7 +29,7 @@ Sixteen Word documents were extracted locally for review. Security-related text,
 ## Important technical findings
 
 - **Resume wording:** Snort supports network intrusion detection and traffic analysis, while Scapy provides packet manipulation and analysis. Describing them as malicious-file scanning APIs would blur their roles. Separate any file-scanning component and its evidence before including that claim. [Snort documentation](https://www.snort.org/faq/what-is-snort), [Scapy documentation](https://scapy.readthedocs.io/en/latest/introduction.html).
-- **UFW transition:** Kyle recalls using UFW after difficulties with iptables. The final showcase still emphasizes iptables and the retained captures demonstrate iptables use. The exact final configuration and transition sequence are not documented well enough to infer a specific root cause. UFW simplifies configuration of the underlying Linux firewall; it is not evidence that Linux packet filtering was replaced. [Ubuntu firewall documentation](https://documentation.ubuntu.com/server/how-to/security/firewalls/index.html).
+- **UFW transition:** I recall using UFW after difficulties with iptables. Our final showcase still emphasizes iptables and the retained captures demonstrate iptables use. The exact final configuration and transition sequence are not documented well enough to infer a specific root cause. UFW simplifies configuration of the underlying Linux firewall; it is not evidence that Linux packet filtering was replaced. [Ubuntu firewall documentation](https://documentation.ubuntu.com/server/how-to/security/firewalls/index.html).
 - **Rule ordering:** One variant accepts forwarding between two interfaces before the later MAC-address rules. Those later rules cannot restrict traffic that an earlier matching accept rule already permits. This is a source-code review finding, not a new test of the original Pi.
 - **SSH:** Some variants contain connection-tracking/recent rules without an explicit accept rule for new SSH sessions. With INPUT default DROP, administration access could fail unless another exception matches. The recent rules count new connection attempts, not verified incorrect passwords. The planned demonstration also uses a different port from the shown rules.
 - **Persistence:** Saving to a custom `.v4` path does not establish that startup loads it. The IP-set example saves iptables rules but does not show separate IP-set restoration. [Official IP-set save/restore documentation](https://ipset.netfilter.org/ipset.man.html).
@@ -57,6 +57,6 @@ Selected images were copied without visual changes. No live credentials were ide
 
 The selected package contains seven reviewed images, new project summaries, and this evidence assessment. The original team presentation, complete reports, assignment materials, consent form, login image, and videos are excluded. No raw firewall or password-management scripts are distributed.
 
-Kyle's confirmed responsibility and dates are reflected in the README. Team-level functions are attributed to the team. Any additional team-authored material should be reviewed for permission and attribution before inclusion.
+My responsibility and project dates are reflected in the README. Our shared accomplishments are attributed to the team. Any additional team-authored material should be reviewed for permission and attribution before inclusion.
 
 Future evidence could include final UFW output, controlled successful and denied traffic tests, reboot persistence, or actual firewall-log ingestion. These are optional improvements to the historical record; their absence is stated in the current portfolio.
