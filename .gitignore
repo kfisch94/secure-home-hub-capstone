@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+*.docx
+*.pdf
+*.pptx
+*.xlsx
+*.mp4
+*.mov
+LOGIN.PNG
+login.png
